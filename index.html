@@ -31,7 +31,7 @@ tagline: true
                 {% endif %}
                 <hr><br>
                 {% endif %}
-                {% for post in site.posts limit: 1 %}
+                {% for post in site.posts limit: 2 %}
 				<h2>
                     {{ post.title }}<br>
                     <span style="font-size: 10pt; color: #999999;">({{ post.date | date:'%e. %b %Y' }}{% if post.author %} by {{ post.author }}{% endif %})</span>
@@ -74,6 +74,9 @@ tagline: true
 					<a href="{{ site.download_server_url }}{{ site.xcsoar_stable_version }}/LINUX/" title="Linux" style="text-decoration: none;" class="green">
 						<img src="/img/linux-logo.png" alt="Linux" height="20" width="20" style="top: 8px; position: relative; padding: 3px;"> Linux
 					</a><br/>
+					<a href="/download/nohorizon.html" title="No Horizon -- All platforms" style="text-decoration: none;" class="green">
+						<img src="/img/no-horizon-logo.png" alt="No Horizon" height="20" width="20" style="top: 8px; position: relative; padding: 3px;"> No Horizon -- All platforms
+					</a><br/>
 				</div>
 			    <a href="/discover/manual.html" title="Download XCSoar Manual"><img src="/img/download-button-manual.png" alt="Download XCSoar Manual"></a>
 				<div style="padding-top: 0px; padding-bottom: 15px; padding-left: 20px;">
@@ -92,7 +95,7 @@ tagline: true
 
 			{% include section_change.html %}
 
-			<div id="screenshots">
+			<divhori id="screenshots">
 				<h2>Screenshots</h2>
 				<h3>Highlights of XCSoar's interface</h3>
 				<ul>
